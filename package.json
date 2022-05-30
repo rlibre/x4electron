@@ -1,0 +1,32 @@
+{
+	"name": "x4electron",
+	"version": "1.0.0",
+	"description": "X4js electron host",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rlibre/x4electron.git"
+	},
+	"keywords": [
+		"typescript",
+		"framework",
+		"x4js"
+	],
+	"scripts": {
+		"build": "build.sh",
+		"mkdoc": "typedoc --tsconfig tsconfig.json --readme none"
+	},
+	"author": "etienne cochard",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rlibre/x4electron/issues"
+	},
+	"homepage": "https://x4js.org",
+	"dependencies": {
+		"x4js": "^1.4.22"
+	},
+	"devDependencies": {
+		"electron": "^19.0.1"
+	}
+}

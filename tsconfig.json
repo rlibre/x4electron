@@ -1,0 +1,23 @@
+{
+  	"compilerOptions": {
+		"target": "esnext",
+		"lib": [ "esnext", "dom" ],
+    	"noImplicitAny": false, 
+    	"strictNullChecks": false,
+    	"outDir": "./lib",
+		"declaration": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"strict": true//false,
+  	},
+	"include": [
+		"./src/*",
+	],
+	"exclude": [
+		"./src/nw**"
+	],
+	"typedocOptions": {
+        "entryPoints": ["src/index.ts"],
+        "out": "../doc/api"
+    }
+}

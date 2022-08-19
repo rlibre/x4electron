@@ -1,9 +1,9 @@
 {
 	"name": "x4electron",
-	"version": "1.0.0",
+	"version": "1.4.5",
 	"description": "X4js electron host",
-	"main": "lib/index.js",
-	"types": "lib/index.d.ts",
+	"main": "lib/x4electron.js",
+	"types": "lib/x4electron.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/rlibre/x4electron.git"
@@ -11,7 +11,8 @@
 	"keywords": [
 		"typescript",
 		"framework",
-		"x4js"
+		"x4js",
+		"electron"
 	],
 	"scripts": {
 		"build": "build.sh",
@@ -23,9 +24,6 @@
 		"url": "https://github.com/rlibre/x4electron/issues"
 	},
 	"homepage": "https://x4js.org",
-	"dependencies": {
-		"x4js": "^1.4.22"
-	},
 	"devDependencies": {
 		"electron": "^19.0.1"
 	}

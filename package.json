@@ -24,9 +24,5 @@
 	"homepage": "https://x4js.org",
 	"devDependencies": {
 		"electron": "^19.0.1"
-	},
-	"x4build": {
-		"type": "electron",
-		"postBuild": ["@copy ${srcdir}/src/assets ${outdir}"]
 	}
 }

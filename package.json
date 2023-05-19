@@ -15,8 +15,6 @@
 		"electron"
 	],
 	"scripts": {
-		"build": "build.sh",
-		"mkdoc": "typedoc --tsconfig tsconfig.json --readme none"
 	},
 	"author": "etienne cochard",
 	"license": "MIT",
@@ -26,5 +24,9 @@
 	"homepage": "https://x4js.org",
 	"devDependencies": {
 		"electron": "^19.0.1"
+	},
+	"x4build": {
+		"type": "electron",
+		"postBuild": ["@copy ${srcdir}/src/assets ${outdir}"]
 	}
 }
